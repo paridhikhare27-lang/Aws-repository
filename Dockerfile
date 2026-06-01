@@ -5,7 +5,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy python file into container
-COPY app.py .
+COPY hello.py .
 
 # Run the application
-CMD ["python", "app.py"]
+CMD ["python", "hello.py"]
