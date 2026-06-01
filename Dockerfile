@@ -1,11 +1,11 @@
 # Use official Python image
 FROM python:3.11-slim
 
-# Set working directory
+# Set working directory inside container
 WORKDIR /app
 
-# Copy python file into container
-COPY hello.py .
+# Copy hello.py into container
+COPY hello.py /app/
 
-# Run the application
+# Run the Python file
 CMD ["python", "hello.py"]
